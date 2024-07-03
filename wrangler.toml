@@ -1,0 +1,28 @@
+name = "fanka-followers-api"
+compatibility_date = "2023-12-01"
+
+[vars]
+USERS = "finka-d4eSl3BHocw,finka-f1iW3ie7KUU,finka-gotSSGOhlsU"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "fanka-followers-db"
+database_id = "e7c6f4aa-4357-4b09-a3e7-980e566682f7"
+preview_database_id = "DB"
+
+# [ai]
+# binding = "AI"
+
+[triggers]
+crons = ["*/5 * * * *"]
+
+[placement]
+mode = "smart"
